@@ -30,11 +30,10 @@ public class AccountsPageTest extends BaseTest {
 
 
 	@Test
-	public void accPageHeadersTest() {
-		List<String> accPageHeadersList = accPage.getAccPageHeaders();
-	
-		Assert.assertEquals(accPageHeadersList, AppConstants.ACC_PAGE_HEADERS_LIST, AppError.LIST_IS_NOT_MATCHED);
-	}
+	  public void accPageHeadersTest() {
+        List<String> accPageHeadersList = accPage.getAccPageHeaders();
+        Assert.assertEquals(accPageHeadersList, AppConstants.ACC_PAGE_HEADERS_LIST, AppError.LIST_IS_NOT_MATCHED);
+    }
 	
 	@DataProvider
 	public Object[][] getSearchData() {

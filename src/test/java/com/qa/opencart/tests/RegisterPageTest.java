@@ -7,7 +7,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qa.opencart.base.BaseTest;
+import com.qa.opencart.constants.AppConstants;
 import com.qa.opencart.errors.AppError;
+import com.qa.opencart.utils.ExcelUtil;
 import com.qa.opencart.utils.StringUtils;
 
 public class RegisterPageTest extends BaseTest {
@@ -26,13 +28,13 @@ public class RegisterPageTest extends BaseTest {
 	}
 
 	
-	@BeforeMethod
-	public void navHomePage() {
-		
+	@DataProvider
+	public Object[][] userRegTestDataFromSheet() {
+		return ExcelUtil.getTestData(AppConstants.REGISTER_SHEET_NAME);
 	}
 	
 	
-	@Test(dataProvider = "userRegTestData")
+	@Test(dataProvider = "userRegTestDataFromSheet")
 	public void userRegisterationTest(String firstName, String lastName, String telephone, String password,
 			String subscribe) {
 		Assert.assertTrue(regPage.userRegister(firstName, lastName, StringUtils.getRandomEmailId(), telephone, password,

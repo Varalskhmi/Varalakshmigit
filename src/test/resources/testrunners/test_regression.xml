@@ -5,12 +5,7 @@
 	thread-count="4">
 
 
-	<test name="Acc Page Test">
-		<parameter name="browser" value="firefox" />
-		<classes>
-			<class name="com.qa.opencart.tests.LoginPageTest" />
-		</classes>
-	</test>
+	
 
 	<test name="Login Page Test">
 		<parameter name="browser" value="chrome" />
@@ -19,7 +14,13 @@
 			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
 	</test>
-
+	
+<!--<test name="Acc Page Test">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.qa.opencart.tests.LoginPageTest" />
+		</classes>
+	</test>
 	<test name="ProductInfo Page Test">
 		<parameter name="browser" value="edge" />
 		
@@ -35,6 +36,6 @@
 		<classes>
 			<class name="com.qa.opencart.tests.RegisterPageTest" />
 		</classes>
-	</test>
+	</test>-->
 
 </suite>

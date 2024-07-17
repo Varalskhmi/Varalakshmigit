@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Reg Page Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 03 16:26:56 IST 2024</td>
+<td>Started on:</td><td>Fri Jul 12 17:17:29 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>37 seconds (37132 ms)</td>
+<tr><td>Total time:</td><td>26 seconds (26246 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,12 +76,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.opencart.tests.RegisterPageTest.userRegisterationTest()'><b>userRegisterationTest</b><br>Test class: com.qa.opencart.tests.RegisterPageTest<br>Parameters: Arti, automation, 9876787656, arti@123, yes</td>
-<td><div><pre>java.lang.AssertionError: ===USER REGISTRATION IS NOT DONE==== expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at com.qa.opencart.tests.RegisterPageTest.userRegisterationTest(RegisterPageTest.java:30)
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest<br>Parameters: sasung, Samsung Galaxy Tab 10.1, 7</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Samsung Galaxy Tab 10.1 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Welcome\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57248}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57248/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1e3ab33bdc4a0680c64a64b38b06d8dc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.qa.opencart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:431)
+	at com.qa.opencart.utils.ElementUtil.doClickWithWait(ElementUtil.java:417)
+	at com.qa.opencart.pages.SearchResultsPage.selectProduct(SearchResultsPage.java:35)
+	at com.qa.opencart.tests.ProductInfoPageTest.productImagesCountTest(ProductInfoPageTest.java:66)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -104,12 +111,19 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div><a href='#' onClick='toggleBox("stack-trace860528905", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace860528905'><pre>java.lang.AssertionError: ===USER REGISTRATION IS NOT DONE==== expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at com.qa.opencart.tests.RegisterPageTest.userRegisterationTest(RegisterPageTest.java:30)
+</pre></div><a href='#' onClick='toggleBox("stack-trace728930404", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace728930404'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Samsung Galaxy Tab 10.1 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Welcome\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57248}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57248/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1e3ab33bdc4a0680c64a64b38b06d8dc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.qa.opencart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:431)
+	at com.qa.opencart.utils.ElementUtil.doClickWithWait(ElementUtil.java:417)
+	at com.qa.opencart.pages.SearchResultsPage.selectProduct(SearchResultsPage.java:35)
+	at com.qa.opencart.tests.ProductInfoPageTest.productImagesCountTest(ProductInfoPageTest.java:66)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -133,22 +147,16 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
 </pre></div></td>
-<td>2</td>
-<td>com.qa.opencart.tests.RegisterPageTest@2ddc9a9f</td></tr>
+<td>5</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@3e8c3cb</td></tr>
 <tr>
-<td title='com.qa.opencart.tests.RegisterPageTest.userRegisterationTest()'><b>userRegisterationTest</b><br>Test class: com.qa.opencart.tests.RegisterPageTest<br>Parameters: praful, automation, 9876787656, apraful@123, no</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: input-firstname (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Welcome\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55425/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ef3c56b4b24bd75367528dad942245ff
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.qa.opencart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:431)
-	at com.qa.opencart.utils.ElementUtil.doSendKeys(ElementUtil.java:47)
-	at com.qa.opencart.pages.RegisterPage.userRegister(RegisterPage.java:41)
-	at com.qa.opencart.tests.RegisterPageTest.userRegisterationTest(RegisterPageTest.java:30)
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productInfoTest()'><b>productInfoTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [MacBook Pro] but found [null],
+	expected [$2,000.00] but found [null]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.qa.opencart.tests.ProductInfoPageTest.productInfoTest(ProductInfoPageTest.java:87)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -171,19 +179,13 @@ Session ID: ef3c56b4b24bd75367528dad942245ff
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div><a href='#' onClick='toggleBox("stack-trace191915691", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace191915691'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: input-firstname (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Welcome\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55425/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ef3c56b4b24bd75367528dad942245ff
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.qa.opencart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:431)
-	at com.qa.opencart.utils.ElementUtil.doSendKeys(ElementUtil.java:47)
-	at com.qa.opencart.pages.RegisterPage.userRegister(RegisterPage.java:41)
-	at com.qa.opencart.tests.RegisterPageTest.userRegisterationTest(RegisterPageTest.java:30)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1091630566", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1091630566'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [MacBook Pro] but found [null],
+	expected [$2,000.00] but found [null]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.qa.opencart.tests.ProductInfoPageTest.productInfoTest(ProductInfoPageTest.java:87)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -207,82 +209,62 @@ Session ID: ef3c56b4b24bd75367528dad942245ff
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
 </pre></div></td>
-<td>10</td>
-<td>com.qa.opencart.tests.RegisterPageTest@2ddc9a9f</td></tr>
+<td>1</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@3e8c3cb</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.qa.opencart.tests.RegisterPageTest.userRegisterationTest()'><b>userRegisterationTest</b><br>Test class: com.qa.opencart.tests.RegisterPageTest<br>Parameters: Madhu, automation, 9876787876, madhu@123, yes</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: input-firstname (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Welcome\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55425/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ef3c56b4b24bd75367528dad942245ff
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.qa.opencart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:431)
-	at com.qa.opencart.utils.ElementUtil.doSendKeys(ElementUtil.java:47)
-	at com.qa.opencart.pages.RegisterPage.userRegister(RegisterPage.java:41)
-	at com.qa.opencart.tests.RegisterPageTest.userRegisterationTest(RegisterPageTest.java:30)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1341393099", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1341393099'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: input-firstname (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Welcome\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55425/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ef3c56b4b24bd75367528dad942245ff
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.qa.opencart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:431)
-	at com.qa.opencart.utils.ElementUtil.doSendKeys(ElementUtil.java:47)
-	at com.qa.opencart.pages.RegisterPage.userRegister(RegisterPage.java:41)
-	at com.qa.opencart.tests.RegisterPageTest.userRegisterationTest(RegisterPageTest.java:30)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div></td>
-<td>10</td>
-<td>com.qa.opencart.tests.RegisterPageTest@2ddc9a9f</td></tr>
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productHeaderTest()'><b>productHeaderTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest<br>Parameters: canon, Canon EOS 5D</td>
+<td></td>
+<td>1</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@3e8c3cb</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest<br>Parameters: macbook, MacBook Pro, 4</td>
+<td></td>
+<td>0</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@3e8c3cb</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productHeaderTest()'><b>productHeaderTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest<br>Parameters: samsung, Samsung Galaxy Tab 10.1</td>
+<td></td>
+<td>1</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@3e8c3cb</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productHeaderTest()'><b>productHeaderTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest<br>Parameters: imac, iMac</td>
+<td></td>
+<td>1</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@3e8c3cb</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest<br>Parameters: samsung, Samsung SyncMaster 941BW, 1</td>
+<td></td>
+<td>0</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@3e8c3cb</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest<br>Parameters: canon, Canon EOS 5D, 3</td>
+<td></td>
+<td>1</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@3e8c3cb</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productHeaderTest()'><b>productHeaderTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest<br>Parameters: samsung, Samsung SyncMaster 941BW</td>
+<td></td>
+<td>1</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@3e8c3cb</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest<br>Parameters: imac, iMac, 3</td>
+<td></td>
+<td>0</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@3e8c3cb</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productHeaderTest()'><b>productHeaderTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest<br>Parameters: macbook, MacBook Pro</td>
+<td></td>
+<td>1</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@3e8c3cb</td></tr>
 </table><p>
 </body>
 </html>

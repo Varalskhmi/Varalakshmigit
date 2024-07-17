@@ -8,7 +8,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qa.opencart.base.BaseTest;
+import com.qa.opencart.constants.AppConstants;
 import com.qa.opencart.errors.AppError;
+import com.qa.opencart.utils.ExcelUtil;
 
 public class ProductInfoPageTest extends BaseTest {
 
@@ -42,21 +44,27 @@ public class ProductInfoPageTest extends BaseTest {
 	public Object[][] getProductImageData()
 	{
 		return new Object[][] {
-			{"macbook","MacBook Pro",4},
-			{"imac","iMac",3},
-			{"samsung","Samsung SyncMaster 941BW",1},
-			{"samsung","Samsung Galaxy Tab 10.1",7},
-			{"canon","Canon EOS 5D",3},
+			{"macbook", "MacBook Pro", 4},
+			{"imac", "iMac", 3},
+			{"samsung", "Samsung SyncMaster 941BW", 1},
+			{"samsung", "Samsung Galaxy Tab 10.1", 7},
+			{"canon", "Canon EOS 5D", 3}
+			,
 
 		};
 	}
-	
-	@Test(dataProvider="getProductImageData")
-	public void productImagesCountTest(String searchKey,String productName,int imagesCount)
+	@DataProvider()
+	public Object[][] getProductImageSheetData()
+	{
+		return ExcelUtil.getTestData(AppConstants.PRODUCT_IMAGES_SHEET_NAME);
+	}
+		
+	@Test(dataProvider="getProductImageSheetData")
+	public void productImagesCountTest(String searchKey,String productName,String imagesCount)
 	{
 		searchResultsPage=accPage.doSearch(searchKey);
 		productInfoPage=searchResultsPage.selectProduct(productName);
-		Assert.assertEquals(productInfoPage.getProductImagesCount(),imagesCount,AppError.IMAGES_COUNT_MISMATCHED);
+		Assert.assertEquals(productInfoPage.getProductImagesCount(),Integer.parseInt(imagesCount),AppError.IMAGES_COUNT_MISMATCHED);
 	}
 	
 	@Test
@@ -68,7 +76,7 @@ public class ProductInfoPageTest extends BaseTest {
 		System.out.println("===========product Information===============");
 		System.out.println(productInfoMap);
 		
-		softAssert.assertEquals(productInfoMap.get("productname"), "MacBook Pro");//F
+		softAssert.assertEquals(productInfoMap.get("productname"),"MacBook Pro");//F
 		softAssert.assertEquals(productInfoMap.get("Brand"), "Apple");
 		softAssert.assertEquals(productInfoMap.get("Product Code"), "Product 18");//P
 		softAssert.assertEquals(productInfoMap.get("Reward Points"), "800");//P

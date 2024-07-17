@@ -22,7 +22,7 @@ public class LoginPage {
 	//2. public constructor of the page
 	public LoginPage(WebDriver driver)
 	{
-		this .driver=driver;
+		this.driver=driver;
 		eleUtil =new ElementUtil(driver);
 	}
 	
@@ -47,7 +47,7 @@ public class LoginPage {
 	}
 	public AccountsPage doLogin(String username,String pwd)
 	{
-		
+		//System.out.println("user creds:"+username+":"+pwd);
 		eleUtil.doSendKeys(emailId,username,TimeUtil.DEFAULT_MEDIUM_TIME);
 		eleUtil.doSendkeys(password, pwd);
 		eleUtil.doClick(loginBtn);

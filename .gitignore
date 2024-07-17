@@ -1,0 +1,7 @@
+pom.xml.next
+.settings/
+bin/
+tmp/
+.metadata
+.classpath
+.project

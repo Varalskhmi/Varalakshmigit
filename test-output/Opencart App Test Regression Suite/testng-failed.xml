@@ -4,14 +4,15 @@
   <test thread-count="3" parallel="tests" name="Reg Page Test(failed)" verbose="4">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.qa.opencart.tests.RegisterPageTest">
+      <class name="com.qa.opencart.tests.ProductInfoPageTest">
         <methods>
+          <include name="productImagesCountTest" invocation-numbers="3"/>
+          <include name="productInfoTest"/>
           <include name="setUp"/>
-          <include name="userRegisterationTest" invocation-numbers="0 1 2"/>
-          <include name="regSetup"/>
+          <include name="productInfoPageTest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.opencart.tests.RegisterPageTest -->
+      </class> <!-- com.qa.opencart.tests.ProductInfoPageTest -->
     </classes>
   </test> <!-- Reg Page Test(failed) -->
 </suite> <!-- Failed suite [Opencart App Test Regression Suite] -->
